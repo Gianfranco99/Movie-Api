@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../logoHenry.png'
-
+import Logo from '../../logoImbd.png'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './Navbar.css';
 
 export default function NavBar() {
@@ -17,6 +17,9 @@ export default function NavBar() {
                         <NavLink to="/favs" >Favoritas</NavLink>
                     </li>
                 </ul>
+                <div>
+                    
+                </div>
             </nav>
         </header>
     )

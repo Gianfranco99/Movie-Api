@@ -1,6 +1,15 @@
-.cnt {
-    padding-top: 10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.contenedor{
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
 }
+
 .form-container {
     display:flex;
     flex-direction: row;
@@ -11,8 +20,99 @@
     margin-left: 20px;
 }
 .label {
-    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: royalblue;
 }
 .buscador{
-    color:red;
+    display: flex;
+    justify-content: center;
+    color:wheat;
+    padding: 20px;
+}
+
+.moviess{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.button{
+    font-family: 'Times New Roman', Times, serif;
+    padding: .1em;
+    border: 2px solid rgb(240, 235, 235);
+    border-radius: 5px;
+    transition: transform 1.5s;
+    
+}
+
+.button:hover{
+    border-radius: 8px;
+    color:white;
+    background-color: black;
+    transform: rotate(1turn);
+}
+
+.button:active{
+    transform: scale(.9);
+}
+.input{
+    height: 2em;
+    margin-left: 10px;
+    background-color: inherit;
+    border-radius: 10px;
+    
+}
+
+
+
+.movies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom:20px ;
+   transition: transform 1s;
+}
+
+.movies:hover{
+    transform: scale(1.1);
+}
+
+.link{
+    color: wheat;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+link:hover{
+    color: white;
+}
+
+.input:focus{
+    color: white;
+    border: none;
+    font-size: 20px initial;
+}
+
+.fav{
+    margin-top: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    padding: .1em;
+    border: 2px solid inherit;
+    border-radius: 5px;
+    transition: background-color,color 2s;
+}
+
+.fav:hover{
+    border-radius: 8px;
+    color:white;
+    background-color: black;
+
+}
+
+.fav:active{
+    transform: scale(.9);
 }

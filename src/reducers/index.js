@@ -5,11 +5,19 @@ const initialState = {
   };
   
   function rootReducer(state = initialState, action) {
+    var {movies} = state;
     if (action.type === "ADD_MOVIE_FAVORITE") {
+      if(movies.find(item => item.title === action.payload.title)){
         return {
+          ...state
+        }
+      } else { 
+        return{
           ...state,
           movies: state.movies.concat(action.payload)
         }
+      }
+      
     }
   
     if(action.type === "REMOVE_MOVIE_FAVORITE") {

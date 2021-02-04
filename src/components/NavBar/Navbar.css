@@ -1,14 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+      padding-top: 3.5em;
+  }
+
 .navbar {
     height: 56px;
     width: 100%;
     top: 0;
-    left: 0;
     background-color: #303236;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
-    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar nav {

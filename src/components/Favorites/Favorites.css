@@ -1,3 +1,26 @@
 .cnt {
     padding-top: 10px;
 }
+
+.favoritas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.eliminar{
+display: flex;
+justify-content: center;    
+border: none;
+margin: 1em;
+}
+
+.nombre{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    color: wheat;
+    padding-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}

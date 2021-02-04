@@ -24,31 +24,33 @@ export class Buscador extends Component {
   render() {
     const { title } = this.state;
     return (
-      <div>
-        <h2 className="buscador">Buscador</h2>
+      <div className="contenedor">
+      <div className="image" >
+        <h2 className="buscador"> Buscador </h2>
         <form className="form-container" onSubmit={(e) => this.handleSubmit(e)}>
-          <div>
-            <label className="label" htmlFor="title">Película: </label>
-            <input
+          <div className="label">
+            <input className="input"
               type="text"
               id="title"
               autoComplete="off"
               value={title}
               onChange={(e) => this.handleChange(e)}
             />
+          <button className="button" type="submit">BUSCAR</button>
           </div>
-          <button type="submit">BUSCAR</button>
         </form>
-        <ul>
+        <ul className="moviess">
          {
             this.props.movies && this.props.movies.map(el => (
-              <div key={el.imdbID}>
-                <NavLink to={`/movie/${el.imdbID}`}>{el.Title}</NavLink>
-                <button onClick={() => this.props.addMovie({title: el.Title, id: el.imdbID})}>Fav</button>
+              <div className="movies" key={el.imdbID}>
+                <NavLink className="link" to={`/movie/${el.imdbID}`}>{el.Title}</NavLink>
+                <NavLink to={`/movie/${el.imdbID}`}><img src={el.Poster} alt = "no esta"  ></img></NavLink> 
+                <button className="fav" onClick={() => this.props.addMovie({title: el.Title, id: el.imdbID, poster:el.Poster})}>Agregar a Fav</button>
               </div>
             ))
          }
         </ul>
+      </div>
       </div>
     );
   }

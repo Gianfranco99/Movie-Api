@@ -1,3 +1,5 @@
+import {persistor} from '../store/index'
+
 export function addMovieFavorite(payload) {
   return {
     type: "ADD_MOVIE_FAVORITE",

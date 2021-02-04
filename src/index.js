@@ -9,11 +9,13 @@ import { Provider } from "react-redux";
 import store from "./store/index";
 
 ReactDOM.render(
+  <div className="fondo">
   <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-    </Provider>,
+    </Provider>
+    </div>,
   document.getElementById('root')
 );
 
