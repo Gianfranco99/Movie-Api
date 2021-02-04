@@ -11,8 +11,8 @@ function App() {
     <div className="App-header">
       <React.Fragment >
           <NavBar  />
-          <Route exact path="/" component={Buscador} />
-          <Route path="/favs" component={Favorites} />
+          <Route exact path="/Movie-Api/" component={Buscador} />
+          <Route path="/Movie-Api/favs" component={Favorites} />
           <Route path="/movie/:id" component={Movie} />
       </React.Fragment>
       </div>
