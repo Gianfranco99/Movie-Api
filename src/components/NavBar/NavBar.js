@@ -14,7 +14,7 @@ export default function NavBar() {
                 <ul className="list">
                     <li className="list-item">
                         <NavLink to="/Movie-Api/" >Home</NavLink>
-                        <NavLink to="/Movie-Api/favs" >Favoritas</NavLink>
+                        <NavLink to="/Movie-Api/favs" >Favs</NavLink>
                     </li>
                 </ul>
                 <div>

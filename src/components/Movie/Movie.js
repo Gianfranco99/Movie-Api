@@ -17,7 +17,7 @@ class Movie extends React.Component {
           <div className="estruc">
             <div>
           <div className="movie-card">
-              Informacion detallada
+              
               <h1 className="title">{this.props.movie.Title}</h1>
               <h4 className="title">Year {this.props.movie.Year}</h4>
               <h4>Description</h4>
