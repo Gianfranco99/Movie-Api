@@ -19,3 +19,4 @@ Para poder comenzar tenemos que instalar las dependencias que utilizaremos. Tend
 ```javascript
 npm install y npm start para correr el proyecto
 ```
+La app esta subida en https://gianfranco99.github.io/Movie-Api/
